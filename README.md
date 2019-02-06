@@ -30,7 +30,7 @@ Helm est un gestionnaire de paquets pour Kubernetes. Pour l'installer, lancer de
 
 #### Installation des services Kubernetes
 
-Pour déployer l'ensemble des services disponibles en une seule ligne de commande grâce à une chart Helm personnalisée, lancer la commande `helm install --name my-release-name --set global.host="mon-host.fr" appoline-k8s/` depuis le noeud maître.
+Pour déployer l'ensemble des services disponibles en une seule ligne de commande grâce à une chart Helm personnalisée, lancer la commande `helm install --name my-release-name --set global.host="mon-host.fr" global.adminUser="username" global.adminPassword="password" appoline-k8s/` depuis le noeud maître.
 
 Le daemonset Traefik fait office d'ingress-controller.
 Le service Grafana devrait être accessible à l'adresse mon-host.fr/grafana. 
